@@ -1,0 +1,63 @@
+//obter todos os produtos
+GET http://localhost:3001/produtos HTTP/1.1
+Content-Type: application/json
+
+###
+
+//obter produtos da categoria 2
+GET http://localhost:3001/produtos?categoriaId=2 HTTP/1.1
+Content-Type: application/json
+
+###
+
+//obter produtos paginados
+GET http://localhost:3001/produtos?_page=2&_limit=3 HTTP/1.1
+Content-Type: application/json
+
+###
+
+//obter produtos ordenados pelo nome de forma descendente
+GET http://localhost:3001/produtos?_sort=nome&_order=desc HTTP/1.1
+Content-Type: application/json
+
+###
+
+//obter produtos com preço maior ou igual a 7
+GET http://localhost:3001/produtos?preco_gte=7 HTTP/1.1
+Content-Type: application/json
+
+###
+
+//obter produtos com preço menor ou igual a 4
+GET http://localhost:3001/produtos?preco_lte=4 HTTP/1.1
+Content-Type: application/json
+
+###
+
+//obter produtos com preço entre 4 e 7
+GET http://localhost:3001/produtos?preco_lte=7&preco_gte=4 HTTP/1.1
+Content-Type: application/json
+
+###
+
+//obter produtos cujo nome contenha "ma"
+GET http://localhost:3001/produtos?nome_like=ma HTTP/1.1
+Content-Type: application/json
+
+###
+
+//obter produtos cujo nome contenha " de "
+GET http://localhost:3001/produtos?nome_like=%20de%20 HTTP/1.1
+Content-Type: application/json
+
+###
+
+//obter produtos cujo nome contenha "2" em qualquer campo (FTS)
+GET http://localhost:3001/produtos?q=2 HTTP/1.1
+Content-Type: application/json
+
+###
+
+//obter produtos cujo nome contenha "ma"
+GET http://localhost:3001/produtos?_expand=categoria HTTP/1.1
+Content-Type: application/json

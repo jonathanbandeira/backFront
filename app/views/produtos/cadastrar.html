@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cadastrar.js" defer></script>
+    <title>Produtos :: Novo Produto</title>
+</head>
+
+<body>
+    <h1>Produtos :: Novo Produto</h1>
+    <hr>
+    <form width="50%">
+        <p>
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome" name="nome">
+        </p>
+        <p>
+            <label for="descricao">Descrição</label><br>
+            <textarea name="descricao" id="descricao" cols="40" rows="5"></textarea>
+        </p>
+        <p>
+            <label for="preco">Preço</label><br>
+            <input type="text" id="preco" name="preco">
+        </p>
+        <p>
+            <label for="categoriaId">Categoria</label><br>
+            <select name="categoriaId" id="categoriaId">
+                <option value="">Selecione...</option>
+            </select>
+        </p>
+        <p>
+            <a href="/index.html">Cancelar</a>
+            <button type="button">Salvar</button>
+        </p>
+    </form>
+    <p id="loading">Carregando...</p>
+</body>
+
+</html>

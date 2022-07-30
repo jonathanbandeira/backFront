@@ -1,0 +1,40 @@
+GET http://localhost:3001/categorias HTTP/1.1
+Content-Type: application/json
+
+###
+
+GET http://localhost:3001/categorias/2 HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST http://localhost:3001/categorias HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Eletrônicos"
+}
+
+###
+
+PUT http://localhost:3001/categorias/7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Eletrônicos"
+}
+
+###
+
+GET http://localhost:3001/categorias/7 HTTP/1.1
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:3001/categorias/7 HTTP/1.1
+
+###
+
+//obter categorias com seus produtos
+GET http://localhost:3001/categorias?_embed=produtos HTTP/1.1
+Content-Type: application/json

@@ -1,0 +1,71 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Cereais"
+    },
+    {
+      "nome": "Bebidas",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "nome": "Higiene"
+    },
+    {
+      "id": 4,
+      "nome": "Padaria"
+    }
+  ],
+  "produtos": [
+    {
+      "nome": "Arroz",
+      "descricao": "Arroz 5kg tipo 1 selecionado eletronicamente.",
+      "preco": 3,
+      "categoriaId": 1,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nome": "Feijão",
+      "preco": 2.5,
+      "descricao": "Feijão vermelho 1kg premium catado eletronicamente.",
+      "categoriaId": 1
+    },
+    {
+      "id": 3,
+      "nome": "Suco de Uva 1L",
+      "preco": 7.5,
+      "descricao": "Suco de uva integral sem adição de água ou açúcar.",
+      "categoriaId": 2
+    },
+    {
+      "id": 4,
+      "nome": "Suco de Laranja 1L",
+      "preco": 8,
+      "descricao": "Suco de laranja integral sem adição de água ou açúcar.",
+      "categoriaId": 2
+    },
+    {
+      "id": 5,
+      "nome": "Sabonete",
+      "preco": 3.5,
+      "descricao": "Sabonete hidratante 90g com fragrância suave de eucalipto.",
+      "categoriaId": 3
+    },
+    {
+      "id": 6,
+      "nome": "Shampoo",
+      "preco": 9,
+      "descricao": "Shampoo 300ml anticaspa e anticoceira para cabelos secos.",
+      "categoriaId": 3
+    },
+    {
+      "id": 7,
+      "nome": "Pão de Forma",
+      "preco": 4.5,
+      "descricao": "Pão de forma 500g integral com cereais e castanhas.",
+      "categoriaId": 4
+    }
+  ]
+}
